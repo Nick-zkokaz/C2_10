@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+		<title>Vote for your favorite pet</title>
+	</head>
+	<body>
+		<div class="container">
+			<br>
+			<h1>Choose your favorite pet</h1>
+			<br>
+			<h1 id="voted">Your vote has been accepted!</h1>
+			
+			<div class="group-buttons">
+			<button id='dogs' onclick="postRequest('dogs')" type="button">Dogs</button>
+			<button id='cats' onclick="postRequest('cats')" type="button">Cats</button>
+			<button id='parrots' onclick="postRequest('parrots')" type="button">Parrots</button>
+			</div>
+			<br>
+			<div>
+				<button id='result' onclick="window.open('result.html')" type='button' class='btn_result'>View voting results</button>
+			</div>
+		</div>
+		
+		<script src="./js/jquery-3.4.1.min.js"></script>
+	    <script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="script/scriptIndex.js"></script>
+	</body>
+</html>
